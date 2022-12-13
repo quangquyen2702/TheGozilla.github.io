@@ -1,0 +1,1130 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@400;600&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Nunito", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.headline {
+  text-align: center;
+  margin: 10% 0% 5%;
+}
+
+.headline h2 {
+  font-size: 18px;
+  color: #031824;
+  padding: 1% 3%;
+  text-transform: uppercase;
+  font-weight: 800;
+  border: 1px solid #bebebe;
+  display: inline-block;
+  color: #555;
+}
+/*= navigation bar */
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  background-color: #f1f5f8;
+  z-index: 10;
+}
+.img-logo {
+  height: 100px;
+}
+.img-logo img {
+  height: 100%;
+}
+marquee {
+  display: none;
+}
+
+.navigation .logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation .logo button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  max-width: 50%;
+}
+
+.logo img {
+  max-width: 60%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.nav-mobile {
+  display: none;
+  color: #031824;
+  padding: 10px;
+}
+
+.navigation.logo:hover button {
+  transform: scale(2);
+  transition: all ease 0.3s;
+  box-shadow: 1px 1px 10px #ddd;
+}
+
+.contain-menu {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu {
+  list-style: none;
+}
+
+#menu li {
+  text-align: left;
+  color: #fff;
+  background-color: #f1f5f8;
+}
+
+#menu li a {
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  padding: 20px;
+  color: #031824;
+  opacity: 0.8;
+  padding: 10px 20px 10px 20px;
+}
+
+#menu li:hover a {
+  opacity: 1;
+  transition: all ease 0.3s;
+  font-weight: 600;
+}
+
+#menu .active1 {
+  opacity: 1;
+  font-weight: 600;
+}
+
+#menu > li {
+  float: left;
+  position: relative;
+}
+
+#menu > li > ul.dropdown_menu {
+  position: absolute;
+  list-style: none;
+  display: none;
+  width: 100%;
+}
+
+#menu > li:hover > ul.dropdown_menu {
+  z-index: 100;
+  display: block;
+}
+
+ul.dropdown_menu > li > ul.submenu {
+  position: absolute;
+  display: none;
+  left: 100%;
+  list-style: none;
+  width: 100%;
+}
+
+ul.dropdown_menu > li:hover > ul.submenu {
+  z-index: 100;
+  display: block;
+}
+
+.welcome {
+  display: none;
+}
+
+.right-elements {
+  width: 20%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.right-elements a {
+  margin: 0px 10px;
+}
+
+.right-elements a i {
+  color: #2c2c2c;
+}
+
+.right-elements a:hover i {
+  color: orangered;
+  transition: all ease 0.2s;
+}
+
+#show-signin {
+  border: none;
+}
+/*footer*/
+
+#footer {
+  background-color: #4380a3;
+  padding: 5% 10px;
+  position: relative;
+  margin-top: 20px;
+  border-top: 1px solid rgb(236, 236, 236);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.footer-logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.footer-logo-container button {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.footer-logo-container span {
+  color: #fcfcfc;
+  font-weight: 400;
+  margin: 10px;
+  font-size: 0.8rem;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social a {
+  margin: 0 6px;
+  color: #e9edf0;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer a:hover {
+  color: #031824;
+  transition: all ease 0.3s;
+}
+
+.footer-menu {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+
+.footer-menu-box {
+  cursor: pointer;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-menu-box strong {
+  color: #f9fdfe;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-menu-box a {
+  color: #fafdff;
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.footer-menu-box a:hover {
+  color: #031824;
+  transition: all ease 0.3s;
+}
+
+.footer-email-form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-email-form strong {
+  color: #f5f8f9;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  margin-right: 5px;
+}
+
+#footer-email {
+  width: 50%;
+  height: 30px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  padding-left: 5px;
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+#footer-email::placeholder {
+  color: grey;
+  font-size: 12px;
+}
+
+#footer-email-btn {
+  width: 20%;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #031824;
+  border: none;
+  color: white;
+  font-size: 12px;
+}
+
+#footer-email-btn:hover {
+  cursor: pointer;
+  background-color: #031824;
+  transition: all 0.4s ease-out;
+}
+/*====pop up sign in====*/
+
+.popup {
+  position: fixed;
+  z-index: 10;
+  top: 90%;
+  left: 50%;
+  /* opacity: 0; */
+  display: none;
+  transform: translate(-50%, -50%) scale(1.25);
+  width: 600px;
+  height: auto;
+  padding: 30px 40px;
+  background: #fff;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms,
+    transform 200ms ease-in-out 0ms;
+}
+
+.popup.active {
+  height: auto;
+  top: 50%;
+  /* opacity: 1; */
+  display: block;
+  transform: translate(-50%, -50%) scale(1);
+  transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms,
+    transform 20ms ease-in-out 0ms;
+}
+
+.popup .center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 18%;
+}
+
+.popup .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  background: #031824;
+  color: white;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.popup .close-btn:hover {
+  background: orangered;
+}
+
+.popup .form h2 {
+  text-align: center;
+  color: #031824;
+  margin: 10px 0px 20px;
+  font-size: 30px;
+}
+
+.popup .form .form-element {
+  margin: 15px 50px;
+}
+
+.popup .form .form-element label {
+  font-size: 13px;
+  color: #031824;
+}
+
+.popup .form .form-element input[type="checkbox"] {
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.popup .form .form-element small {
+  visibility: hidden;
+  position: absolute;
+  font-size: 12px;
+}
+
+.popup-signup .form .form-element.error small {
+  color: red;
+  visibility: visible;
+}
+
+.popup .form .form-element .input-box {
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  outline: none;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.popup .form .form-element input[type="password"],
+.popup .form .form-element input[type="email"],
+.popup .form .form-element input[type="text"] {
+  width: 95%;
+  border: none;
+  outline: none;
+}
+
+#reset-pass {
+  border: none;
+  background: transparent;
+  font-size: 13px;
+  float: right;
+  color: #1a79ca;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.popup .form .form-element .form-but button,
+.popup .form .form-element .form-but1 button {
+  width: 100%;
+  height: 25px;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  background: #031824;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.eye {
+  position: absolute;
+}
+
+#hide1 {
+  display: none;
+}
+
+.popup .form .form-element button:hover {
+  background: orangered;
+  transition: all ease 0.2s;
+  color: white;
+}
+
+.popup .form .form-element a {
+  display: inline;
+  margin-left: 190px;
+  font-size: 13px;
+  color: #1a79ca;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.popup .form .form-element p {
+  font-size: 10px;
+  color: #031824;
+  text-align: center;
+  margin: 5x 0px;
+}
+
+.popup.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+/*==blur when show popup===*/
+
+.background#blur.active {
+  filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
+}
+/*====pop up sign up====*/
+
+.popup-signup {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  /*    opacity: 0;*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 600px;
+  height: auto;
+  padding: 30px 40px;
+  background: #fff;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms,
+    transform 200ms ease-in-out 0ms;
+}
+
+.popup-signup.active {
+  height: auto;
+  top: 50%;
+  display: block;
+  transform: translate(-50%, -50%) scale(1);
+  transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms,
+    transform 20ms ease-in-out 0ms;
+}
+
+.popup-signup .center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 18%;
+}
+
+.popup-signup .cancel-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  background: #031824;
+  color: white;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.popup-signup .cancel-btn:hover {
+  background: orangered;
+}
+
+.popup-signup .form h2 {
+  text-align: center;
+  color: #031824;
+  margin: 10px 0px 20px;
+  font-size: 30px;
+}
+
+.popup-signup .form .form-element {
+  margin: 15px 50px 15px;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.popup-signup .form .form-element label {
+  font-size: 13px;
+  color: #031824;
+  display: inline-block;
+}
+
+.popup-signup .form .form-element i {
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.popup-signup .form .form-element.success i.fa-check-circle {
+  visibility: visible;
+  color: limegreen;
+}
+
+.popup-signup .form .form-element.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: red;
+}
+
+.popup-signup .form .form-element small {
+  visibility: hidden;
+  position: absolute;
+  font-size: 12px;
+  bottom: 1;
+  left: 0;
+}
+
+.popup-signup .form .form-element.error small {
+  color: red;
+  visibility: visible;
+}
+
+.popup-signup .form .form-element input[type="email"],
+.popup-signup .form .form-element input[type="password"],
+.popup-signup .form .form-element input[type="text"] {
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  outline: none;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.popup-signup .form .form-element.success input[type="email"],
+.popup-signup .form .form-element.success input[type="password"],
+.popup-signup .form .form-element.success input[type="text"] {
+  border-color: limegreen;
+}
+
+.popup-signup .form .form-element.error input[type="email"],
+.popup-signup .form .form-element.error input[type="password"],
+.popup-signup .form .form-element.error input[type="text"] {
+  border-color: red;
+}
+
+.popup-signup .form .form-element input[type="checkbox"] {
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.popup-signup .form .form-element.success input[type="checkbox"] {
+  border-color: limegreen;
+}
+
+.popup-signup .form .form-element.error input[type="checkbox"] {
+  border-color: red;
+}
+
+.popup-signup .form .form-element button {
+  width: 100%;
+  height: 25px;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  background: #031824;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.popup-signup .form .form-element button:hover {
+  background: orangered;
+  transition: all ease 0.2s;
+  color: white;
+}
+
+.popup-signup .form .form-element a {
+  display: inline;
+  font-size: 13px;
+  color: #1a79ca;
+  text-decoration: none;
+}
+
+.popup-signup .form .form-element p {
+  font-size: 10px;
+  color: #031824;
+  text-align: center;
+  margin: 5x 0px;
+}
+
+.popup-signup #register-status {
+  margin-top: 20px;
+  font-size: 15px;
+  color: limegreen;
+  visibility: hidden;
+}
+
+.popup-signup.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+/*====pop up reset pass====*/
+
+.resetpwd {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  /*    opacity: 0;*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 600px;
+  height: auto;
+  padding: 30px 40px;
+  background: #fff;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms,
+    transform 200ms ease-in-out 0ms;
+}
+
+.resetpwd.active {
+  height: auto;
+  top: 50%;
+  /* opacity: 1; */
+  display: block;
+  transform: translate(-50%, -50%) scale(1);
+  transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms,
+    transform 20ms ease-in-out 0ms;
+}
+
+.resetpwd .center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 18%;
+}
+
+.resetpwd .cancelreset-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  background: #031824;
+  color: white;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.resetpwd .cancelreset-btn:hover {
+  background: orangered;
+}
+
+.resetpwd .form h2 {
+  text-align: center;
+  margin: 50px 0;
+  color: #031824;
+  margin: 10px 0px 20px;
+  font-size: 30px;
+}
+
+.resetpwd small {
+  margin-top: 20px;
+  visibility: hidden;
+  color: red;
+}
+
+.resetpwd .form .form-element {
+  margin: 15px 50px 15px;
+}
+
+.resetpwd .form .form-element label {
+  font-size: 13px;
+  color: #031824;
+}
+
+.resetpwd .form .form-element input[type="text"],
+.resetpwd .form .form-element input[type="password"] {
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  outline: none;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.resetpwd .form .form-element button {
+  width: 100%;
+  height: 25px;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  background: #031824;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.resetpwd .form .form-element button:hover {
+  background: orangered;
+  transition: all ease 0.2s;
+  color: white;
+}
+
+.resetpwd .form .form-element a {
+  display: inline;
+  font-size: 13px;
+  color: #1a79ca;
+  text-decoration: none;
+}
+
+.resetpwd .form .form-element p {
+  font-size: 10px;
+  color: #031824;
+  text-align: center;
+  margin: 5x 0px;
+}
+
+.resetpwd.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+.menu-bar i {
+  font-size: 25px;
+  cursor: pointer;
+}
+.modal-menu {
+  transition: all 0.5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-300px);
+  height: 100vh;
+  max-width: 300px;
+  width: 100%;
+  z-index: 30;
+  padding-left: 40px;
+  padding-top: 40px;
+  background-color: rgb(255, 252, 252);
+}
+.modal-menu li {
+  padding: 15px 0;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+.modal-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 6;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.24);
+}
+.menu-child {
+  margin-left: 20px;
+  display: none;
+}
+.menu-child.active {
+  margin-left: 20px;
+  display: block;
+}
+.close-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.close-menu i {
+  font-size: 28px;
+  font-weight: 600;
+}
+.menu-child.active {
+  display: block;
+}
+@media screen and (min-width: 1024px) {
+  .menu-bar {
+    display: none;
+  }
+  .modal-menu {
+    display: none;
+  }
+}
+/* Tablet */
+
+@media screen and (min-width: 740px) and (max-width: 1100px) {
+  .modal-menu.active {
+    display: block;
+  }
+  .modal-menu.active {
+    /* display: block; */
+    transform: translateX(0);
+  }
+  .modal-overlay.active {
+    display: block;
+  }
+  .modal-menu {
+    display: none;
+  }
+  .navigation {
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+  .menu-bar {
+    width: 33.3%;
+    cursor: pointer;
+  }
+  .contain-menu {
+    display: none;
+  }
+  */ #menu {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    margin-top: 90%;
+  }
+  #menu li {
+    width: 100%;
+    color: white;
+    background-color: #031824;
+  }
+  #menu li a {
+    text-decoration: none;
+    font-size: 15px;
+    padding: 20px;
+    color: white;
+    opacity: 0.8;
+    padding: 10px 20px 10px 20px;
+  }
+  #menu li:hover a {
+    opacity: 1;
+    transition: all ease 0.3s;
+    font-weight: 600;
+  }
+  #menu > li > ul.dropdown_menu {
+    list-style: none;
+    display: none;
+    width: 100%;
+  }
+  #menu > li:hover > ul.dropdown_menu {
+    display: block;
+    margin-left: 100%;
+    margin-top: -20%;
+  }
+  .right-elements {
+    width: 33.3%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .right-elements a {
+    margin: 0px 10px;
+  }
+  .right-elements a i {
+    color: #2c2c2c;
+  }
+  .right-elements a:hover i {
+    color: orangered;
+    transition: all ease 0.2s;
+  }
+  #show-signin {
+    border: none;
+  }
+  marquee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .welcome {
+    display: flex;
+  }
+}
+@media screen and (max-width: 740px) {
+  .modal-menu.active {
+    /* display: block; */
+    transform: translateX(0);
+  }
+  .modal-overlay.active {
+    display: block;
+  }
+  .contain-menu {
+    display: none;
+  }
+  .menu-bar {
+    width: 33.3%;
+  }
+  .navigation .logo {
+    width: 33.3%;
+  }
+  .navigation {
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+  .nav-mobile {
+    width: 100%;
+    display: block;
+    color: #031824;
+    padding: 0px 20px;
+    font-size: large;
+    font-size: 20px;
+  }
+  */ #menu {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    margin-top: 90%;
+  }
+  #menu li {
+    width: 100%;
+    color: white;
+    background-color: #031824;
+  }
+  #menu li a {
+    text-decoration: none;
+    font-size: 15px;
+    padding: 20px;
+    color: white;
+    opacity: 0.8;
+    padding: 10px 20px 10px 20px;
+  }
+  #menu li:hover a {
+    opacity: 1;
+    transition: all ease 0.3s;
+    font-weight: 600;
+  }
+  #menu > li > ul.dropdown_menu {
+    list-style: none;
+    display: none;
+    width: 100%;
+  }
+  #menu > li:hover > ul.dropdown_menu {
+    display: block;
+    margin-left: 100%;
+    margin-top: -20%;
+  }
+  .right-elements {
+    width: 33.3%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .right-elements a {
+    margin: 0px 10px;
+  }
+  .right-elements a i {
+    color: #2c2c2c;
+  }
+  .right-elements a:hover i {
+    color: orangered;
+    transition: all ease 0.2s;
+  }
+  #show-signin {
+    border: none;
+  }
+  marquee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .welcome {
+    display: flex;
+  }
+  .footer-logo-container {
+    width: 50%;
+  }
+  .footer-logo-container span {
+    font-size: 1.2rem;
+  }
+  .footer-menu-box {
+    width: 50%;
+    text-align: center;
+  }
+  .footer-email-form {
+    width: 70%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-logo-container {
+    width: 300px;
+  }
+  #footer {
+    width: 108%;
+  }
+  #best-selling.best-selling-list {
+    display: none;
+  }
+}
+@media screen and (min-width: 740px) and (max-width: 1024px) {
+  .modal-menu {
+    display: none;
+  }
+  .modal-menu.active {
+    /* display: block; */
+    transform: translateX(0);
+  }
+  .modal-overlay.active {
+    display: block;
+  }
+  .contain-menu {
+    display: none;
+  }
+  .navigation .logo {
+    width: 33.3%;
+  }
+  .slides {
+    margin-top: 10px;
+  }
+  .footer-email-form {
+    width: 60%;
+  }
+  #footer-email-btn {
+    width: 100px;
+    max-width: 100%;
+    margin-top: 10px;
+  }
+  #footer-email {
+    width: 200px;
+    max-width: 100%;
+  }
+  #footer {
+    width: 105%;
+  }
+  .right-elements {
+    margin-right: 10%;
+  }
+  .footer-logo-container {
+    width: 60%;
+  }
+  .footer-menu-box {
+    width: 50%;
+  }
+}

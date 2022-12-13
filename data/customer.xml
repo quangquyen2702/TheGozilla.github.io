@@ -1,0 +1,46 @@
+<cus-list>
+<customer> 
+	<id>120312</id> 
+	<name>Chau Vo Van Dao</name>
+	<phone>0945789645</phone> 
+	<address>Thang Binh, Quang Nam</address> 
+	<gmail>daocvv@gmail.com</gmail> 
+	<total>$500</total> 
+</customer>
+
+<customer> 
+	<id>120532</id> 
+	<name>Quang Quyen</name>
+	<phone>032456458</phone> 
+	<address>Tam Ky, Quang Nam</address> 
+	<gmail>quyen123@gmail.com</gmail> 
+	<total>$700</total> 
+</customer>
+
+<customer> 
+	<id>120672</id> 
+	<name>Gia Han</name>
+	<phone>015678941</phone> 
+	<address>Mo Duc, Quang Ngai</address> 
+	<gmail>hangia@gmail.com</gmail> 
+	<total>$450</total> 
+</customer>
+
+<customer> 
+	<id>123587</id> 
+	<name>Ngo Thi Bin</name>
+	<phone>097512464</phone> 
+	<address>Quan 12, HCM</address> 
+	<gmail>binngu@gmail.com</gmail> 
+	<total>$800</total> 
+</customer>
+
+<customer> 
+	<id>124758</id> 
+	<name>Pham Tuan An</name>
+	<phone>0945759984</phone> 
+	<address>Pleiku, Gia Lai</address> 
+	<gmail>anpt@gmail.com</gmail> 
+	<total>$980</total> 
+</customer>
+</cus-list>

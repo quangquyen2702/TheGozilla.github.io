@@ -1,0 +1,181 @@
+body {
+  background-color: #f1f5f8;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+
+  margin-top: 1200px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: fit-content;
+  padding: 0px 200px;
+  margin-top: -200px;
+}
+
+.vision {
+  background-color: #ededed;
+  padding: 50px 40px;
+}
+
+.tittle {
+  font-size: 35px;
+  color: #354650;
+  font-weight: bold;
+  text-align: center;
+}
+
+.text {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #031824;
+}
+
+.container2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  width: 100%;
+  margin-top: 100px;
+  padding: 100px;
+}
+.container2-img {
+  width: 50%;
+}
+.mission {
+  background-color: #ffffff;
+  text-align: center;
+  width: 50%;
+  padding: 0 20px;
+}
+
+.tittle2 {
+  font-size: 35px;
+  color: #031824;
+  font-weight: bold;
+  text-align: center;
+}
+
+.text2 {
+  font-size: 20px;
+  color: #031824;
+  text-align: justify;
+  margin-top: 40px;
+}
+
+.team-tittle {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  text-align: center;
+}
+
+.team-tittle hr {
+  margin-top: -25px;
+  height: 3px;
+  border: #031824;
+}
+
+.container3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 200px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.info {
+  text-align: center;
+  margin-right: 15px;
+}
+
+.container3 img {
+  width: 120px;
+  height: 120px;
+}
+
+.info .name {
+  color: #031824;
+  font-size: 18px;
+}
+#banner {
+  width: 100%;
+  height: 100%;
+  margin: 5px 5px 5px;
+}
+.slidershow {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -999;
+}
+
+.navigation1 {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  margin-top: 1000px;
+}
+
+.bar {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.bar:hover {
+  background: #4380a3;
+  transition: 0.6s;
+  border: 2px solid #031824;
+}
+
+input[name="bottom"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 20%;
+  transition: 0.6s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+#bottom_1:checked ~ .s1 {
+  margin-left: 0;
+}
+#bottom_2:checked ~ .s1 {
+  margin-left: -20%;
+}
+#bottom_3:checked ~ .s1 {
+  margin-left: -40%;
+}
+#bottom_4:checked ~ .s1 {
+  margin-left: -60%;
+}

@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Godzilla</title>
+    <link rel="shortcut icon" type="image/png" href="image/homepage/logo.png"/>
+    <link href="css/homepage.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel='stylesheet'>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
+    <script type="text/javascript">
+        // Js FOR SLIDER START
+        var counter = 1;
+        setInterval(function() {
+            document.getElementById('r' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 5000);
+        // Js FOR SLIDER END
+    </script>
+</head>
+
+<body>
+    <!--    navigationbar-->
+     <!--    navigationbar-->
+     <nav class="navigation">
+        <!-- Menu bar Mobile tablet -->
+        <div class="menu-bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <!--        Logo-->
+         <div class="logo">
+            <button class="img-logo" type="button" onclick="LinkHomepage()">
+               <img src="image/homepage/logo.png" style="width: 100%; height:100% " >
+            </button>
+        </div>
+            
+        <!--        menu-->
+        <div class="contain-menu">
+            <div class="nav-mobile" onclick="OpenMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="menu">
+                <li>
+                    <a href="Homepage.html" class="active1">HOME</a></li>
+                </li>
+                <li>
+                    <a href="AllProduct.html">PRODUCT CATEGORY</a>
+                    </a>
+                    <ul class="dropdown_menu">
+                        <li>
+                            <ul class="submenu">
+                                <li><a href="AllProduct.html">HIGH TOPS</a></li>
+                                <li><a href="AllProduct.html">LOW TOPS</a></li>
+                                <li><a href="AllProduct.html">SLIP ON</a></li>
+                            </ul>
+                            <a href="AllProduct.html">TYPE</a>
+                        </li>
+                        <li>
+                            <ul class="submenu">
+                                <li><a href="AllProduct.html">MEN</a></li>
+                                <li><a href="AllProduct.html">WOMEN</a></li>
+                                <li><a href="AllProduct.html">KID</a></li>
+                            </ul>
+                            <a href="AllProduct.html">SEX</a>
+                        </li>
+                        <li>
+                            <ul class="submenu">
+                                <li><a href="AllProduct.html">NIKE</a></li>
+                                <li><a href="AllProduct.html">ADIDAS</a></li>
+                                <li><a href="AllProduct.html">SUPREME</a></li>
+                                <li><a href="AllProduct.html">CONVERSE</a></li>
+                                <li><a href="AllProduct.html">TIMBERLAND</a></li>
+                                <li><a href="AllProduct.html">THENORTHFACE</a></li>
+                            </ul>
+                            <a href="AllProduct.html">BRAND</a>
+                        </li>
+                        <li><a href="AllProduct.html">LAST ITEM</a></li>
+                        <li><a href="AllProduct.html">SPORT</a></li>
+                    </ul>
+                </li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="Customer Service_FAQ.html">CUSTOMER SERVICE</a></li>
+                <li><a href="About-us.html" >ABOUT US</a></li>
+            </ul>
+        </div>
+
+        <!--        right-->
+        <div class="right-elements">
+            <!--        search-->
+            <a href="#" class="search">
+                <i class="fa fa-search"></i></a>
+            <!--        cart-->
+            <a href="cart.html" class="cart">
+                <i class="fa fa-shopping-bag"></i></a>
+            <!--        user-->
+            <a href="#" class="user">
+                <button type="button" id="show-signin">
+                    <i class="fa fa-user" style="font-size: 16px">
+                    </i>
+                </button>
+            </a>
+
+        </div>
+    </nav>
+
+    <!--    navigation end-->
+    <section>
+    <div id="slider">
+        <div class="slides">
+            <!-- radio buttons start -->
+            <input type="radio" name="radio-btn" id="r1">
+            <input type="radio" name="radio-btn" id="r2">
+            <input type="radio" name="radio-btn" id="r3">
+            <input type="radio" name="radio-btn" id="r4">
+            <!-- radio buttons end -->
+
+            <!-- slide img start -->
+            <div class="slide first">
+                <img src="image/homepage/123.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="image/homepage/2.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="image/homepage/3.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="image/homepage/4.png" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="image/all-product/1.1.5.jpg" alt="">
+            </div>
+            <!-- slide img end -->
+
+            <!-- automatic slider start -->
+            <div class="slider-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!-- automatic slider end -->
+
+            <!-- manual slider start -->
+            <div class="slider-manual">
+                <label for="r1" class="manual-btn"></label>
+                <label for="r2" class="manual-btn"></label>
+                <label for="r3" class="manual-btn"></label>
+                <label for="r4" class="manual-btn"></label>
+
+            </div>
+            <!-- manual slider end -->
+        </div>
+    </div>
+</section>
+
+    <!---- pop up sign in----->
+
+    <div class="popup" id="id01" >
+        <div class="close-btn">&times;</div>
+        <form class="form" name="signin">
+            <img src="image/homepage/logo.png" class="center-img" >
+            <div class="form-element">
+                <label for="username">Username: </label>
+                <div class="input-box">
+                    <input type="text" id="usernameinput" placeholder="Enter your username">
+                </div>
+                <small id="error-username">not same</small>
+            </div>
+            <div class="form-element">
+                <label for="password">Password: </label>
+                <div class="input-box">
+                    <input type="password" id="myInput" placeholder="Enter your password">
+                    <span class="eye" onclick="myFunction()"> 
+            <i id="hide1" class="fa fa-eye" style="color: #031824; font-size: 13"></i>
+            <i id="hide2" class="fa fa-eye-slash" style="color: #031824; font-size: 13"></i>
+            </span>
+                </div>
+                <small id="error-pwd">not same</small>
+            </div>
+            <div class="form-element">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember me </label>
+                <button id="reset-pass" onclick="resetpwd()">Forgot password?</button>
+            </div>
+
+
+            <div class="form-element">
+                <div class="form-but">
+                    <button type="button" id="signin" onclick="toggle()">SIGN IN</button>
+                </div>
+            </div>
+            <div class="form-element">
+                <div class="form-but1">
+                    <button type="button" onclick="Signinadmin()">SIGN IN AS ADMIN </button>
+                </div>
+            </div>
+            <div class="form-element">
+                <p>Or</p>
+            </div>
+            <div class="form-element">
+                <div class="form-but">
+                    <button type="button" id="show-signup" onclick="signup()">CREATE A NEW ACCOUNT </button>
+                </div>
+            </div>
+
+        </form>
+
+
+    </div>
+
+
+    <!---- pop up sign up----->
+
+    <div class="popup-signup" id="id02">
+        <div class="cancel-btn" onclick="toggle()">&times;</div>
+        <form class="form" id="signup-form" name="signupform">
+            <img src="image/homepage/logo.png" class="center-img">
+            <div class="form-element">
+                <label for="phone">User name: </label>
+                <input type="text" id="username" placeholder="The Godzilla">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error type</small>
+            </div>
+            <div class="form-element">
+                <label for="email">Email: </label>
+                <input type="email" id="signup-email" placeholder="thegodzilla@gmail.com">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error type</small>
+            </div>
+            <div class="form-element">
+                <label for="password">Password: </label>
+                <input type="password" id="password" placeholder="abcdxyz">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Error type</small>
+            </div>
+
+            <div class="form-element">
+                <label for="password">Confirm password: </label>
+                <input type="password" id="password2" placeholder="abcdxyz">
+                <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>not same</small>
+            </div>
+
+
+            <div class="form-element">
+                <input type="checkbox" id="accept">
+                <label for="accept"> By creating an account you agree to our <a href="#" >Terms and Privacy</a>.</label>
+                <small>Please be sure before signing up</small>
+            </div>
+
+
+            <div class="form-element">
+                <button type="submit" id="signupbut">SIGN UP</button>
+                <p id="register-status">Register successfully!</p>
+            </div>
+
+
+        </form>
+    </div>
+    <!---- pop up forgot pass----->
+    <div class="resetpwd" id="id03">
+        <div class="cancelreset-btn" onclick="toggle()">&times;</div>
+        <form class="form" name="resetform">
+            <h2> Reset your password </h2>
+            <div class="form-element">
+                <label for="email">Email: </label>
+                <input type="text" id="reset-email" placeholder="Enter your mail">
+                <small id="email-reset">Email thieu dau @</small>
+            </div>
+
+
+            <div class="form-element">
+                <button onclick="sendreset()">SEND RESET PASSWORD LINK</button>
+            </div>
+
+
+        </form>
+    </div>
+    <div class="background" id="blur">
+   
+
+        <!--    main-section-->
+        <section id="main">
+            <!--    Main-content-->
+            <div class="main-content">
+                
+                <!-- text -->
+                <div class="main-text" data-aos="fade-right" data-aos-offset="300"
+                data-aos-easing="ease-in-sine"  data-aos-duration="800">
+                    <span>COLLECTION</span>
+                    <h1> Winter Sneakers Best List </h1>
+                    <p> Winter will get here soon. Our store is having some sneakers of the TheGodzilla's new collection. What are you waiting for? </p>
+                    <a href="AllProduct.html">SHOP NOW</a>
+                </div>
+
+                <!-- Main-img -->
+                <div class="main-img" data-aos="fade-left" data-aos-offset="300"
+                data-aos-easing="ease-in-sine"  data-aos-duration="1000">
+                    <img src="image/homepage/products/main_img.jpg" alt="Sneaker">
+                </div>
+            </div>
+        </section>
+        <!--    main-section-end-->
+
+        <!--banner-->
+        <div id="banner">
+            <!--img-->
+            <div class="banner-img" data-aos="zoom-in-right" data-aos-duration="1200">
+                <img src="image/homepage/banner.png" alt="banner">
+            </div>
+
+
+            <!--text-->
+            <div class="banner-text" data-aos="zoom-in-right" data-aos-duration="1200">
+                <strong id="banner-strong">Discount 5% for Newbie</strong>
+                <!--                <span>From $230</span>-->
+                <p id="banner-detail"> Welcome to TheGodzilla's website! What's better than shopping here for the first time with 5% off code up to $20, only for newbie? Just do it! </p>
+                <a id="getvoucher">GET VOUCHER</a>
+            </div>
+        </div>
+        <!--    banner end-->
+        <!--banner 2-->
+        <section id="banner">
+
+
+            <!--text-->
+
+            <div class="banner-text2" data-aos="zoom-out-right" data-aos-duration="1000">
+                <h2>OUR COMMITMENT</h2>
+
+                <div class="banner-text2-container">
+
+                    <!--                <span>From $230</span>-->
+
+                    <!--                box1 -->
+                    <div class="banner-text2-container-box">
+                        <p class="icon"><i class="fa fa-heart"></i> Authentics </p>
+                    </div>
+                    <!--                box2 -->
+                    <div class="banner-text2-container-box">
+                        <p><i class="fa fa-check"></i> Warranty </p>
+                    </div>
+                    <!--                box3 -->
+                    <div class="banner-text2-container-box">
+                        <p><i class="fa fa-money"></i> Best Price </p>
+                    </div>
+
+                    <!--                box4 -->
+                    <div class="banner-text2-container-box">
+                        <p><i class="fa fa-truck"></i> Freeship For Bill > $300 </p>
+                    </div>
+
+
+
+                    <!--                <a href="#">GET VOUCHER</a>-->
+                </div>
+
+            </div>
+
+            <!--img-->
+            <div class="banner-img2" data-aos="zoom-out-left" data-aos-duration="1200">
+                <img src="image/homepage/banner2.png" alt="banner">
+            </div>
+
+
+
+
+        </section>
+        <!--    banner end-->
+
+        <!--    feature products-->
+      <section>
+        <div id="main1">
+            <div id="content">
+                <div id="best-selling" class="row best-selling-list">
+                    <h2 class="section-heading">FEATURE PRODUCT</h2>
+                    <div class="cd-slider">
+                        <ul class="popular-slider">
+                            <li class="item  current" style="background: white;">
+                                <div class="card" style="background: #F7F7F9;">
+                                    <!-- <img src="url"> -->
+                                    <div class="img">
+                                        <ul class="cd-gallery">
+                                            <li>
+                                                <a href="productDetail.html">
+                                                    <ul class="cd-item-wrapper">
+                                                        <li class="selected">
+                                                            <img src="image/homepage/products/1.The-North-Face-Lace-Up-Boots.jpg" alt="Preview image">
+                                                        </li>
+    
+                                                        <li class="move-right" data-sale="true" data-price="$22">
+                                                            <img src="image/all-product/1.The North Face Lace-Up Boots.jpg" alt="Preview image">
+                                                        </li>
+    
+                                                        <li>
+                                                            <img src="image/all-product/1.The North Face Lace-Up Boots.jpg" alt="Preview image">
+                                                        </li>
+                                                    </ul>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="info">
+                                        <h1 class="popular-title">The North Face Boots</h1>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p>
+                                            Material(s): 100% Recycled PET ripstop material
+                                            Colour(s): White
+                                            - Lace-up winter boots
+                                            - Oso fleece collar lining
+                                            - Sole Unit Rubber outsole
+                                            - Non-PFC durable water-repellent finish to keep feet dry
+                                            - Adjustable collar bungee to prevent snow from getting in
+                                        <p class="price"><del>2.500.000VND</del><span class="sale-price popular-sale-price"> 2.400.000VND</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" style="background: white;">
+                                <div class="card" style="background: #F7F7F9;">
+                                    <!-- <img src="url"> -->
+                                    <div class="img">
+                                        <ul class="cd-gallery">
+                                            <li>
+                                                <a href="productDetail.html">
+                                                    <ul class="cd-item-wrapper">
+                                                        <li class="selected">
+                                                            <img src="image/homepage/products/2.Timberland-Trekker-Hiking-Boots.jpg" alt="Preview image">
+                                                        </li>
+    
+                                                        <li class="move-right" data-sale="true" data-price="2500000 VND">
+                                                            <img src="image/homepage/products/2.Timberland-Trekker-Hiking-Boots.jpg" alt="Preview image">
+                                                        </li>
+    
+                                                        <li>
+                                                            <img src="image/homepage/products/2.Timberland-Trekker-Hiking-Boots.jpg" alt="Preview image">
+                                                        </li>
+                                                    </ul>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="info">
+                                        <h1 class="popular-title">Timberland-Boots</h1>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p>
+                                            Style A2J37231
+                                            These men's mixed-media hikers were designed for comfort with a cushiony EVA-blend foam midsole and lightweight OrthoLite® footbed. Added features include a rubber lug outsole for traction and eco-conscious materials.                                        </p>
+                                        <p class="price"><del>3.000.000VND</del><span class="sale-price popular-sale-price"> 2.700.000VND</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" style="background: white;">
+                                <div class="card" style="background: #F7F7F9;">
+                                    <!-- <img src="url"> -->
+                                    <div class="img">
+                                        <ul class="cd-gallery">
+                                            <li>
+                                                <a href="productDetail.html">
+                                                    <ul class="cd-item-wrapper">
+                                                        <li class="selected">
+                                                            <img src="image/homepage/products/3.1.jpg" alt="Preview image">
+                                                        </li>
+    
+                                                        <li class="move-right" data-sale="true" data-price="2000000 VND">
+                                                            <img src="image/homepage/products/3.1.jpg" alt="Preview image">
+                                                        </li>
+    
+                                                        <li>
+                                                            <img src="image/homepage/products/3.1.jpg" alt="Preview image">
+                                                        </li>
+                                                    </ul>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="info">
+                                        <h1 class="popular-title">Nike-Air-Force-1</h1>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p>
+                                            Mã giày: 314192-117 <br>
+                                            Phối màu: White
+                                            Nhà thiết kế: Bruce Kilgore<br>
+                                            Ngày phát hành: ngày 4 tháng 9 năm 2020 <br>
+                                            Thương hiệu: Nike<br>
+                                            Danh mục: Air Force 1                                        
+                                        </p>
+                                        <p class="price"><del>3.200.000 VND</del><span class="sale-price popular-sale-price"> 3.000.000 VND</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" style="background: white;">
+                                <div class="card" style="background: #F7F7F9;">
+                                    <!-- <img src="url"> -->
+                                    <div class="img">
+                                        <ul class="cd-gallery">
+                                            <li>
+                                                <a href="ProductDetail.html">
+                                                    <ul class="cd-item-wrapper">
+                                                        <li class="selected">
+                                                            <img src="image/homepage/products/4.Puma-Suede-Classic.jpg" alt="Preview image">
+                                                        </li>
+    
+                                                        <li class="move-right" data-sale="true" data-price="2000000 VND">
+                                                            <img src="image/homepage/products/4.Puma-Suede-Classic.jpg" alt="Preview image">
+                                                        </li>
+    
+                                                        <li>
+                                                            <img src="image/homepage/products/4.Puma-Suede-Classic.jpg" alt="Preview image">
+                                                        </li>
+                                                    </ul>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="info">
+                                        <h1 class="popular-title">Puma-Suede-Classic</h1>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p>
+                                            Chất liệu: Da lộn <br>
+                                            Kiểu dáng giày sneaker nam cổ thấp <br>
+                                            Dây thắt bản mảnh đan chéo <br>
+                                            Phối logo thương hiệu ở lưỡi gà <br>
+                                            Gam màu hiện đại dễ dàng phối với nhiều trang phục và phụ kiện<br>
+                                            Xuất xứ thương hiệu: Đức                                        </p>
+    
+                                        <p class="price"><del>1.000.000 VND</del><span class="sale-price  popular-sale-price"> 988.000 VND</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item" style="background: white;">
+                                <div class="card" style="background: #F7F7F9;">
+                                    <!-- <img src="url"> -->
+                                    <div class="img">
+                                        <ul class="cd-gallery">
+                                            <li>
+                                                <a href="productDetail.html">
+                                                    <ul class="cd-item-wrapper">
+                                                        <li class="selected">
+                                                            <img src="image/homepage/products/1.The-North-Face-Lace-Up-Boots.jpg" alt="Preview image">
+                                                        </li>
+    
+                                                        <li class="move-right" data-sale="true" data-price="2000000 VND">
+                                                            <img src="image/homepage/products/1.The-North-Face-Lace-Up-Boots.jpg" alt="Preview image">
+                                                        </li>
+    
+                                                        <li>
+                                                            <img src="image/homepage/products/1.The-North-Face-Lace-Up-Boots.jpg" alt="Preview image">
+                                                        </li>
+                                                    </ul>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="info">
+                                        <h1 class="popular-title">The-North-Face-Boots</h1>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <p>
+                                            Material(s): 100% Recycled PET ripstop material
+                                            Colour(s): White
+                                            - Lace-up winter boots
+                                            - Oso fleece collar lining
+                                            - Sole Unit Rubber outsole
+                                            - Non-PFC durable water-repellent finish to keep feet dry
+                                            - Adjustable collar bungee to prevent snow from getting in                                        </p>
+    
+                                        <p class="price"><del>3.500.000 VND</del><span class="sale-price popular-sale-price">3.399.000 VND</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+    
+                        <div class="popular-nav">
+                            <a href="#" class="prev">
+                                <i class="fas fa-chevron-left best-selling-arrow"></i>
+                            </a>
+                            <a href="#" class="next">
+                                <i class="fas fa-chevron-right best-selling-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="best-selling" class="best-selling-list">
+                    <h2 class="section-heading">BEST SELLER</h2>
+                    <div id="product-box">
+                        <div class="middleArea"></div>
+                        <div class="mySlider">
+                            <div class="slideItems item1 active">
+                                <a href="AllProduct.html">
+                                    <div class="best-selling-border">
+                                        <img src="image/homepage/products/5.Converse-Chuck-Taylor-High-Top.jpg" alt="" class="best-selling-img">
+                                        <div class="best-selling-body">
+                                            <h3 class="best-selling-name">Converse-Chuck-Taylor</h3>
+                                            <p class="price"><del>3.000.000VND</del><span class="sale-price"> 2.900.000VND</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slideItems item2 next">
+                                <a href="AllProduct.html">
+                                    <div class="best-selling-border">
+                                        <img src="image/homepage/products/Air-Jordan-1.jpg" alt="" class="best-selling-img">
+                                        <div class="best-selling-body">
+                                            <h3 class="best-selling-name">Air-Jordan</h3>
+                                            <p class="price"><del>2.300.000VND</del><span class="sale-price">2.100.000VND</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slideItems item3 next">
+                                <a href="AllProduct.html">
+                                    <div class="best-selling-border">
+                                        <img src="image/homepage/products/Nike-Air-Force-1.jpg" alt="" class="best-selling-img">
+                                        <div class="best-selling-body">
+                                            <h3 class="best-selling-name">Nike-Air-Force-1</h3>
+                                            <p class="price"><del>3.900.000VND</del><span class="sale-price">3.600.000VND</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slideItems item4 next">
+                                <a href="AllProduct.html">
+                                    <div class="best-selling-border">
+                                        <img src="image/homepage/products/Timberland-Swift-Hiking-Boots.jpg" alt="" class="best-selling-img">
+                                        <div class="best-selling-body">
+                                            <h3 class="best-selling-name">Timberland-Swift-Hiking</h3>
+                                            <p class="price"><del>1.200.000VND</del><span class="sale-price">1.000.000VND</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slideItems item5 next">
+                                <a href="AllProduct.html">
+                                    <div class="best-selling-border">
+                                        <img src="image/homepage/products/Timberland-Warm-Lined-Slip-On.jpg" alt="" class="best-selling-img">
+                                        <div class="best-selling-body">
+                                            <h3 class="best-selling-name">Timberland-Warm-Lined</h3>
+                                            <p class="price"><del>900.000VND</del><span class="sale-price">888.000VND</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slideItems item6 next">
+                                <a href="AllProduct.html">
+                                    <div class="best-selling-border">
+                                        <img src="image/homepage/products/Vans-Sk8-Hi-Animal.jpg" alt="" class="best-selling-img">
+                                        <div class="best-selling-body">
+                                            <h3 class="best-selling-name">Vans-Sk8-Hi</h3>
+                                            <p class="price"><del>2.000.000VND</del><span class="sale-price">1.800.000VND</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="slideItems item7 next">
+                                <a href="AllProduct.html">
+                                    <div class="best-selling-border">
+                                        <img src="image/homepage/products/Vans-Old-Skool.jpg" alt="" class="best-selling-img">
+                                        <div class="best-selling-body">
+                                            <h3 class="best-selling-name">Vans-Old-Skool</h3>
+                                            <p class="price"><del>3.000.000VND</del><span class="sale-price">2.900.000VND</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="myNavs">
+                            <div class="slider-left"><i id="navleft" class="fas fa-chevron-left best-selling-arrow"></i></div>
+                            <div class="slider-right"><i id="navright" class="fas fa-chevron-right best-selling-arrow"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--    List Brand-->
+        <section id="list-brand">
+            <h2> LIST BRAND </h2>
+
+            <div class="list-brand-container">
+
+                <!-- box-->
+                <a href="AllProduct.html" class="list-brand-box">
+                    <img src="image/homepage/Logo/nike.png" alt="list-brand">
+                    <span>Nike</span>
+                </a>
+
+                <!-- box-->
+                <a href="AllProduct.html" class="list-brand-box">
+                    <img src="image/homepage/Logo/sup.png" alt="list-brand">
+                    <span>supreme</span>
+                </a>
+
+
+                <!-- box-->
+                <a href="AllProduct.html" class="list-brand-box">
+                    <img src="image/homepage/Logo/adidas.png" alt="list-brand">
+                    <span>adidas</span>
+                </a>
+
+
+            </div>
+
+            <div class="list-brand-container">
+
+                <!-- box-->
+                <a href="AllProduct.html" class="list-brand-box">
+                    <img src="image/homepage/Logo/timber.png" alt="list-brand">
+                    <span>Timberland</span>
+                </a>
+
+                <!-- box-->
+                <a href="AllProduct.html" class="list-brand-box">
+                    <img src="image/homepage/Logo/the-north-face.png" alt="list-brand">
+                    <span>The North Face</span>
+                </a>
+
+
+                <!-- box-->
+                <a href="AllProduct.html" class="list-brand-box">
+                    <img src="image/homepage/Logo/Converse.png" alt="list-brand">
+                    <span>Converse</span>
+                </a>
+
+
+            </div>
+
+        </section>
+        <!--    list-brand end  -->
+
+        <section id="footer">
+            <div class="footer-container">
+
+                <!--logo-->
+                <div class="footer-logo-container"><button type="button"><img src="image/homepage/logotrang.png" width="60" height="60"></button>
+                    <!--text-->
+                    <span>Copyright 2022 - @thegodzilla</span>
+                    <!--Social-->
+                    <div class="footer-social">
+
+                        <a><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/thegodzilla.official/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a><i class="fa fa-skype"></i></a>
+                        <a><i class="fa fa-youtube"></i></a>
+
+                    </div>
+                </div>
+           
+                <!--        footer menu-->
+                <div class="footer-menu">
+                    <!-- footer menu box-->
+                    <div class="footer-menu-box">
+                        <strong>About us</strong>
+                        <ul>
+                            <li> <a> Blog </a></li>
+                            <li> <a> Demo </a></li>
+                            <li> <a> Customers </a></li>
+                            <li> <a> Term of Service </a></li>
+                        </ul>
+
+                    </div>
+
+                    <!-- footer menu box-->
+                    <div class="footer-menu-box">
+                        <strong>Contact us</strong>
+                        <ul>
+                            <li> <a> Support </a></li>
+                            <li> <a> Complain </a></li>
+
+                            <li> <a> Return </a></li>
+                            <li> <a> Contact </a></li>
+
+                        </ul>
+
+                    </div>
+                </div>
+                     <!-- footer menu box-->
+                     <div class="footer-email-form">
+                        <strong>join our newsletter</strong>
+                        <ul>
+                            <input type="email" placeholder="Enter your email address" id="footer-email">
+                            <input type="submit" value="Subcribe" id="footer-email-btn"> </ul>
+                    </div>
+            </div>
+            <ul class="modal-menu">
+                <li><a href="Homepage.html"> HOME</a></li>
+                <li> 
+                    <span class="show-child-item" ><a href="AllProduct.html"> PRODUCT CATEGORY </a><i class="fa-sharp fa-solid fa-caret-down"></i></span> 
+                    <ul class="menu-child">
+                        <li>TYPE</li>
+                        <li>SEX</li>
+                        <li>BRAND</li>
+                        <li>LAST ITEM</li>
+                        <li>SPORT</li>
+                    </ul>
+                </li>
+                <li><a href="news.html">NEWS </a> </li>
+                <li><a href="Customer Service_FAQ.html"> SERVICE</a></li>
+                <li><a href="About-us.html"> ABOUT US</a></li>
+               <div class="close-menu"><i class="fa-sharp fa-solid fa-xmark"></i></div> 
+            </ul>
+            <div class="modal-overlay"></div>
+        </section>
+    </div>
+    <!-- AOS ANIMATION -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <!-- PRODUCT SLIDER START -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="assets/js/product-slider.js"></script>
+    <!-- PRODUCT SLIDER END -->
+
+    <!-- POPULAR SLIDER START -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src="assets/js/popular slider js/slider-script.js"></script>
+
+    <script src="assets/js/popular slider js/jquery-2.1.1.js"></script>
+    <script src="assets/js/popular slider js/jquery.mobile.min.js"></script>
+    <script src="assets/js/popular slider js/main.js"></script>
+    <script src="js/main.js"></script>
+    <!-- POPULAR SLIDER END -->
+ <script src="js/main.js"></script> 
+        
+<!--    feature products end-->
+
+<!--    footer-->
+</body>
+</html>

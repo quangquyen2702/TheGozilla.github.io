@@ -1,0 +1,90 @@
+.body {
+    padding: 0px 8%;
+}
+
+.body table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbstatus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumbstatus div {
+    border: 1px solid #031824;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orderdetail p {
+    font-size: 17px;
+}
+
+.orderdetail hr {
+    padding: 0px 100px;
+    margin: 10px;
+}
+
+.title {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.item {
+    height: 180px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 15% 15%;
+    align-items: center;
+}
+
+.thumb {
+    display: flex;
+    flex-direction: row;
+    height: 180px;
+    padding: 15px;
+    align-items: center;
+}
+
+.thumb img {
+    max-width: 60%;
+    max-height: 80%;
+    margin-right: 10px;
+}
+
+#qty,
+#total1 {
+    text-align: right;
+}
+
+.line {
+    padding: 0px 5%;
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: 85% 15%;
+}
+
+#subtotal,
+#ship,
+#discount,
+#total {
+    text-align: center;
+}
+
+.signature {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

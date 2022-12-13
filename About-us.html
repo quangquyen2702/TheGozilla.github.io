@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="shortcut icon" type="image/png" href="image/homepage/logo.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel='stylesheet'>
+    <link rel="stylesheet" href="css/about-us.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/about-usResponsive.css">
+
+</head>
+
+<body>
+    <nav class="navigation">
+        <!--        Logo-->
+         <div class="logo">
+            <button type="button" onclick="LinkHomepage()">
+               <img src="image/homepage/logo.png" style="width: 100%; height:100%" >
+            </button>
+        </div>
+ 
+        <!--        menu-->
+        <div class="contain-menu">
+            <div class="nav-mobile" onclick="OpenMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="menu">
+                <li>
+                    <a href="homepage.html" >HOME</a></li>
+                </li>
+                <li>
+                    <a href="AllProduct.html">PRODUCT CATEGORY</a>
+                    </a>
+                    <ul class="dropdown_menu">
+                        <li>
+                            <ul class="submenu">
+                                <li><a href="AllProduct.html">HIGH TOPS</a></li>
+                                <li><a href="AllProduct.html">LOW TOPS</a></li>
+                                <li><a href="AllProduct.html">SLIP ON</a></li>
+                            </ul>
+                            <a href="AllProduct.html">TYPE</a>
+                        </li>
+                        <li>
+                            <ul class="submenu">
+                                <li><a href="AllProduct.html">MEN</a></li>
+                                <li><a href="AllProduct.html">WOMEN</a></li>
+                                <li><a href="AllProduct.html">KID</a></li>
+                            </ul>
+                            <a href="AllProduct.html">SEX</a>
+                        </li>
+                        <li>
+                            <ul class="submenu">
+                                <li><a href="AllProduct.html">NIKE</a></li>
+                                <li><a href="AllProduct.html">ADIDAS</a></li>
+                                <li><a href="AllProduct.html">SUPREME</a></li>
+                                <li><a href="AllProduct.html">CONVERSE</a></li>
+                                <li><a href="AllProduct.html">TIMBERLAND</a></li>
+                                <li><a href="AllProduct.html">THENORTHFACE</a></li>
+                            </ul>
+                            <a href="AllProduct.html">BRAND</a>
+                        </li>
+                        <li><a href="AllProduct.html">LAST ITEM</a></li>
+                        <li><a href="AllProduct.html">SPORT</a></li>
+                    </ul>
+                </li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="Customer Service_FAQ.html">CUSTOMER SERVICE</a></li>
+                <li><a href="About-us.html" class="active">ABOUT US</a></li>
+            </ul>
+        </div>
+         <!--        right-->
+         <div class="right-elements">
+             <!--        search-->
+             <a href="#" class="search">
+                 <i class="fa fa-search"></i></a>
+             <!--        cart-->
+             <a href="cart.html" class="cart">
+                 <i class="fa fa-shopping-bag"></i></a>
+             <!--        user-->
+             <a href="#" class="user">
+                 <i class="fa fa-user"></i></a>
+         </div>
+     </nav> 
+    <section>
+        <div class="slidershow">
+			<div class="slides">
+				<input type="radio" name="bottom" id="bottom_1" checked>
+				<input type="radio" name="bottom" id="bottom_2">
+				<input type="radio" name="bottom" id="bottom_3">
+				<input type="radio" name="bottom" id="bottom_4">
+				<input type="radio" name="bottom" id="bottom_5">
+				<div class="slide s1">
+					<img src="image/AboutUs/banner.png">
+				</div>
+				<div class="slide">
+					<img src="image/AboutUs/banner1.jpg">
+				</div>
+				<div class="slide">
+					<img src="image/AboutUs/banner2.jpg">
+				</div>
+				<div class="slide">
+					<img src="image/AboutUs/banner3.jpg">
+				</div>
+			</div>
+			<div class="navigation1">
+				<label for="bottom_1" class="bar"></label>
+				<label for="bottom_2" class="bar"></label>
+				<label for="bottom_3" class="bar"></label>
+				<label for="bottom_4" class="bar"></label>
+			</div>
+		</div>
+
+    </section>
+    
+    <section class="container">
+        <div class="card1" data-aos="fade-right"
+        data-aos-duration="800"
+        >
+            <div class="vision">
+                <div class="tittle">OUR VISION</div>
+                <div class="text">
+                    Our mission is what drives us to do everything possible to expand human potential. We do that by creating. Groundbreaking sport innovations, by making our products more sustainably, by building a creative and diverse.<br />
+
+                    <br /> Groundbreaking sport innovations, by making our products more sustainably, by building a creative and diverse.
+                </div>
+            </div>
+            <div>
+                <img style="margin-top:90px;" src="image/AboutUs/vision.png" width="500px" height="550px" />
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="container2">
+
+        <div class="container2-img" data-aos="fade-right" data-aos-offset="300"
+        data-aos-easing="ease-in-sine"  data-aos-duration="800">
+            <img src="image/AboutUs/misson.png" width="100%" height="550px" />
+        </div>
+        <div class="mission" data-aos="fade-left" data-aos-offset="300"
+        data-aos-easing="ease-in-sine"  data-aos-duration="1000">
+            <div class="tittle2">OUR MISSION</div>
+            <div class="text2">
+                Our mission is what drives us to do everything possible to expand human potential. We do that by creating. Groundbreaking sport innovations, by making our products more sustainably, by building a creative and diverse.<br />
+                <br /> Groundbreaking sport innovations, by making our products more sustainably, by building a creative and diverse.
+            </div>
+        </div>
+
+    </section>
+
+    <section style="margin-top:40px">
+        <div class="team-tittle">
+            <hr>
+            <span><b style="color:#031824; font-size:35px">| MEET OUR TEAM |</b></span>
+            <hr>
+        </div>
+
+        <div class="container3">
+            <div class="info">
+                <img src="image/AboutUs/Thao.jpg" /><br />
+                <span class="name">Phương Thảo</span>
+            </div>
+
+            <div class="info">
+                <img src="image/AboutUs/Han.jpg" /><br />
+                <span class="name">Gia Hân</span>
+            </div>
+
+            <div class="info">
+                <img src="image/AboutUs/" /><br />
+                <span class="name">Thành Đạt</span>
+            </div>
+
+            <div class="info">
+                <img src="image/AboutUs/" /><br />
+                <span class="name">Văn Đạo</span>
+            </div>
+
+            <div class="info">
+                <img src="image/AboutUs/Quyen.png" /><br />
+                <span class="name">Quang Quyền</span>
+            </div>
+            <div class="info">
+                <img src="image/AboutUs/An.jpg" /><br />
+                <span class="name">Tuấn An</span>
+            </div>
+        </div>
+    </section> 
+    <!--    footer-->
+    <section id="footer">
+        <div class="footer-container">
+
+            <!--logo-->
+            <div class="footer-logo-container"><button type="button"><img src="image/homepage/logotrang.png" width="60" height="60"></button>
+                <!--text-->
+                <span>Copyright 2022 - @thegodzilla</span>
+                <!--Social-->
+                <div class="footer-social">
+
+                    <a><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/thegodzilla.official/" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a><i class="fa fa-skype"></i></a>
+                    <a><i class="fa fa-youtube"></i></a>
+
+                </div>
+            </div>
+       
+            <!--        footer menu-->
+            <div class="footer-menu">
+                <!-- footer menu box-->
+                <div class="footer-menu-box">
+                    <strong>About us</strong>
+                    <ul>
+                        <li> <a> Blog </a></li>
+                        <li> <a> Demo </a></li>
+                        <li> <a> Customers </a></li>
+                        <li> <a> Term of Service </a></li>
+                    </ul>
+
+                </div>
+
+                <!-- footer menu box-->
+                <div class="footer-menu-box">
+                    <strong>Contact us</strong>
+                    <ul>
+                        <li> <a> Support </a></li>
+                        <li> <a> Complain </a></li>
+
+                        <li> <a> Return </a></li>
+                        <li> <a> Contact </a></li>
+
+                    </ul>
+
+                </div>
+            </div>
+                 <!-- footer menu box-->
+                 <div class="footer-email-form">
+                    <strong>join our newsletter</strong>
+                    <ul>
+                        <input type="email" placeholder="Enter your email address" id="footer-email">
+                        <input type="submit" value="Subcribe" id="footer-email-btn"> </ul>
+                </div>
+        </div>
+    </section>
+     <!-- AOS ANIMATION -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+         AOS.init();
+       </script>
+</body>
+
+</html>

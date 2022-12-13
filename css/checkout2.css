@@ -1,0 +1,114 @@
+.body {
+    padding: 0px 8%;
+}
+
+.body table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbstatus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumbstatus div {
+    border: 1px solid #031824;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+
+.payment-item {
+    border: 1px solid #031824;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 150px;
+}
+
+.payment-item input {
+    width: 100px;
+}
+
+.thumb-payment {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    text-align: right;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.thumb-payment img {
+    max-width: 60%;
+    max-height: 50%;
+}
+
+.summary,
+.basket {
+    margin-left: 50px;
+    padding: 5px 10px;
+    border: 1px solid #031824;
+    margin-bottom: 10px;
+}
+
+.summary h3,
+hr,
+p {
+    margin-bottom: 5px;
+}
+
+.summary p {
+    margin-left: 10px;
+}
+
+#discount {
+    opacity: 70%;
+}
+
+.item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-left: 10px;
+}
+
+.thumb {
+    width: 100%;
+    background-size: 100% 100%;
+}
+
+.thumb img {
+    max-width: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.continue {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.continue input {
+    padding: 10px 50px;
+}

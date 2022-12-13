@@ -1,0 +1,45 @@
+@media (min-width: 1024px) {
+}
+
+@media (max-width: 739px) {
+  .container2-img {
+    width: 100%;
+  }
+  .card1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .container2 {
+    padding: 100px 0;
+  }
+  .mission {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .container3 {
+    padding: 0px 50px;
+    justify-content: center;
+  }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .container2-img {
+    width: 100%;
+  }
+  .mission {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .container2 {
+    padding: 100px 0;
+  }
+  .container3 {
+    justify-content: center;
+  }
+}
